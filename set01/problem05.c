@@ -30,7 +30,14 @@ void output(int a, int b, int c, int largest);
     }
     void output(int a, int b, int c, int largest)
     {
+        if(a==b&&b==c)
+        {
+            printf("they are equal\n");
+        }
+        else
+        {
         printf("largest of %d, %d, %d is %d",a,b,c,largest);
+        }
     }
     int main()
     {
