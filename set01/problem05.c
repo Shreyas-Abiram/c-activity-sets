@@ -13,23 +13,19 @@ void output(int a, int b, int c, int largest);
     int compare(int a, int b, int c)
     {
         int lg;
-        if(a>b&&a>c)
+        if(a>=b&&a>=c)
         {
             lg=a;
         }
-        else if(b>a&&b>c)
+        else if(b>=a&&b>=c)
         {
             lg=b;
         }
-        else if(c>a&&c>b)
+        else if(c>=a&&c>=b)
         {
             lg=c;
         }
-        else if(a==b&&b==c)
-        {
-            printf("they are equal\n");
-            return a;
-        }
+        
         return lg;
     }
     void output(int a, int b, int c, int largest)
