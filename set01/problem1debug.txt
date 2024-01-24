@@ -1,0 +1,51 @@
+PS C:\c programs\c-activity-sets> cd set01    
+PS C:\c programs\c-activity-sets\set01> gcc problem06.c -o problem06.c > debuglog.txt 2> errors.txt    
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) q
+PS C:\c programs\c-activity-sets\set01> gcc "problem01.c" -o problem1 -O0 -g  
+PS C:\c programs\c-activity-sets\set01> gdb
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) file problem1.exe
+Reading symbols from C:\c programs\c-activity-sets\set01\problem1.exe...done.
+(gdb) l
+1       // 1. Write a C program to print your name.
+2       #include<stdio.h>
+3       int main()
+4       {
+5           printf("Shreyas Abiram YR");
+6           return 0;
+7       }(gdb) r
+Starting program: C:\c programs\c-activity-sets\set01/problem1.exe 
+[New Thread 11376.0x3dcc]
+[New Thread 11376.0x22e8]
+Shreyas Abiram YR[Inferior 1 (process 11376) exited normally]
+(gdb) b 3
+Breakpoint 1 at 0x40146e: file problem01.c, line 3.
+(gdb) r
+Starting program: C:\c programs\c-activity-sets\set01/problem1.exe 
+[New Thread 16988.0x4094]
+[New Thread 16988.0x278c]
+
+Breakpoint 1, main () at problem01.c:5
+5           printf("Shreyas Abiram YR");
+(gdb) n
+Shreyas Abiram YR6          return 0;
+(gdb) n
+7       }(gdb) s
+0x00401288 in __register_frame_info ()
+(gdb)

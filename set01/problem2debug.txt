@@ -1,0 +1,35 @@
+(gdb) file problem2.exe                     
+Reading symbols from C:\c programs\c-activity-sets\set01\problem2.exe...done.
+(gdb) l
+1       //2. Write a C program to add two numbers.
+2       #include<stdio.h>
+3       int main()
+4       {
+5           int a,b;
+6           printf("enter 1st number: ");
+7           scanf("%d",&a);
+8           printf("enter 2nd number: ");
+9           scanf("%d",&b);
+10          printf("Sum = %d",a+b);
+(gdb) 
+11          return 0;
+12      }
+(gdb) b 3
+Breakpoint 1 at 0x40146e: file problem02.c, line 3.
+(gdb) r
+Starting program: C:\c programs\c-activity-sets\set01/problem2.exe 
+[New Thread 13108.0x32b8]
+[New Thread 13108.0x4270]
+
+Breakpoint 1, main () at problem02.c:6
+6           printf("enter 1st number: ");
+(gdb) 3
+Undefined command: "3".  Try "help".
+(gdb) continue
+Continuing.
+enter 1st number: 1
+enter 2nd number: 2
+Sum = 3[Inferior 1 (process 13108) exited normally]
+(gdb) finish
+The program is not being run.
+(gdb) q

@@ -1,0 +1,26 @@
+(gdb) file problem5.exe
+Reading symbols from C:\c programs\c-activity-sets\set01\problem5.exe...done.
+(gdb) l
+36              }
+37              else
+38              {
+39              printf("largest of %d, %d, %d is %d",a,b,c,largest);
+40              }
+41          }
+42          int main()
+43          {
+44              int a,b,c,lg;
+45              a=input();
+(gdb) r
+Starting program: C:\c programs\c-activity-sets\set01/problem5.exe 
+[New Thread 16496.0x42d8]
+[New Thread 16496.0x456c]
+enter a number : 3
+enter a number : 4
+enter a number : 5
+largest of 3, 4, 5 is 5[Inferior 1 (process 16496) exited normally]
+(gdb) continue
+The program is not being run.
+(gdb) finish
+The program is not being run.
+(gdb) quit
