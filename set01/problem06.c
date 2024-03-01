@@ -26,7 +26,9 @@ void output(int a, int b, int c, int largest);
         {
             *largest=c;
         }
-    }
+    } 
+
+    
     void output(int a, int b, int c, int largest)
     {
         if(a==b&&b==c)
