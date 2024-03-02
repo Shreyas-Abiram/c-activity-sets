@@ -11,6 +11,8 @@ void output(int n, int sum);
         scanf("%d", &n);
         return n;
     }
+
+      
     int sum_n_nos(int n)
     {
         int sum=0;

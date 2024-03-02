@@ -30,6 +30,7 @@ int stringcompare(char *string1, char *string2)
         }
     }
     void output(char *string1, char *string2, int result)
+
     {
         if (result == 1)
         {
@@ -42,7 +43,8 @@ int stringcompare(char *string1, char *string2)
         else
             printf("they are equal");
     }
-    int main()
+    int main()  
+     
     {
         char string1[100], string2[100];
         input_2_strings(string1, string2);
