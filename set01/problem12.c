@@ -48,8 +48,11 @@ struct _complex {
         }
     }
     printf("=%f+%fi\n",result.real,result.imaginary);
+    
   }
-  int main()
+  int main()  
+
+
   {
     int n;
     n=get_n();
